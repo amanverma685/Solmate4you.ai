@@ -57,7 +57,7 @@ const VoiceChatScreen = ({ delay = 0 }) => {
           </div>
           
           {/* Header */}
-          <div className="bg-gradient-to-r from-soft-blue to-soft-green px-4 py-3 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-r from-soft-blue to-soft-green px-3 py-2.5 text-white relative overflow-hidden">
             <motion.div
               animate={{
                 x: [0, 100, 0],
@@ -70,7 +70,7 @@ const VoiceChatScreen = ({ delay = 0 }) => {
               }}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
             />
-            <div className="flex items-center gap-3 relative z-10">
+            <div className="flex items-center gap-2 relative z-10">
               <motion.div
                 animate={{
                   scale: [1, 1.1, 1],
@@ -80,12 +80,12 @@ const VoiceChatScreen = ({ delay = 0 }) => {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border-2 border-white/30"
+                className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border-2 border-white/30 flex-shrink-0"
               >
-                <span className="text-xl">💙</span>
+                <span className="text-lg">💙</span>
               </motion.div>
-              <div>
-                <h3 className="font-semibold">solmate4you.ai</h3>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-semibold text-sm truncate">solmate4you.ai</h3>
                 <motion.p
                   animate={{
                     opacity: [0.7, 1, 0.7]
@@ -95,16 +95,16 @@ const VoiceChatScreen = ({ delay = 0 }) => {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="text-xs opacity-90"
+                  className="text-xs opacity-90 truncate"
                 >
-                  {isListening ? 'Listening...' : 'Always here for you'}
+                  {isListening ? 'Listening...' : 'Always here'}
                 </motion.p>
               </div>
             </div>
           </div>
 
           {/* Voice/Text Toggle */}
-          <div className="px-4 py-3 bg-gray-50 border-b border-gray-200">
+          <div className="px-3 py-2.5 bg-gray-50 border-b border-gray-200">
             <div className="flex gap-2 bg-white rounded-full p-1">
               <motion.button
                 whileTap={{ scale: 0.95 }}
@@ -400,17 +400,17 @@ const ProfileScreen = ({ delay = 0 }) => {
           {/* Profile Stats */}
           <div className="px-4 py-4 bg-gray-50">
             <div className="grid grid-cols-3 gap-2">
-              <div className="text-center bg-white rounded-xl p-3 shadow-sm">
-                <div className="text-2xl font-bold text-soft-blue">127</div>
-                <div className="text-xs text-gray-500 mt-1">Conversations</div>
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+                <div className="text-xl font-bold text-soft-blue">127</div>
+                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Conversations</div>
               </div>
-              <div className="text-center bg-white rounded-xl p-3 shadow-sm">
-                <div className="text-2xl font-bold text-soft-green">42</div>
-                <div className="text-xs text-gray-500 mt-1">Sessions</div>
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+                <div className="text-xl font-bold text-soft-green">42</div>
+                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Sessions</div>
               </div>
-              <div className="text-center bg-white rounded-xl p-3 shadow-sm">
-                <div className="text-2xl font-bold text-soft-blue">15</div>
-                <div className="text-xs text-gray-500 mt-1">Days Active</div>
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+                <div className="text-xl font-bold text-soft-blue">15</div>
+                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Days Active</div>
               </div>
             </div>
           </div>

@@ -51,25 +51,25 @@ const RoadmapSection = () => {
       status: 'current'
     },
     {
-      phase: 'Q2 2024',
+      phase: 'Q2 2025',
       title: 'Beta Launch & Testing',
       description: 'Launch beta version, gather user feedback, refine companion interactions, and expand to iOS and Android platforms.',
       status: 'upcoming'
     },
     {
-      phase: 'Q3 2024',
+      phase: 'Q3 2025',
       title: 'Enhanced Features & Sessions',
       description: 'Add interactive sessions with music and games, mood tracking, personalized recommendations, and multi-language support.',
       status: 'upcoming'
     },
     {
-      phase: 'Q4 2024',
+      phase: 'Q4 2025',
       title: 'Public Launch & Community',
       description: 'Public launch, community platform, moderation tools, and user connection features to help people find support together.',
       status: 'upcoming'
     },
     {
-      phase: '2025',
+      phase: '2026',
       title: 'Enterprise & Global Expansion',
       description: 'B2B partnerships with healthcare providers, enterprise features, API access, and international market expansion.',
       status: 'upcoming'
