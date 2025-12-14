@@ -55,53 +55,6 @@ const VoiceChatScreen = ({ delay = 0 }) => {
               <div className="w-1 h-1 bg-white rounded-full"></div>
             </div>
           </div>
-          
-          {/* Header */}
-          <div className="bg-gradient-to-r from-soft-blue to-soft-green px-3 py-2.5 text-white relative overflow-hidden">
-            <motion.div
-              animate={{
-                x: [0, 100, 0],
-                opacity: [0.1, 0.2, 0.1]
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-            />
-            <div className="flex items-center gap-2 relative z-10">
-              <motion.div
-                animate={{
-                  scale: [1, 1.1, 1],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border-2 border-white/30 flex-shrink-0"
-              >
-                <span className="text-lg">💙</span>
-              </motion.div>
-              <div className="min-w-0 flex-1">
-                <h3 className="font-semibold text-sm truncate">solmate4you.ai</h3>
-                <motion.p
-                  animate={{
-                    opacity: [0.7, 1, 0.7]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="text-xs opacity-90 truncate"
-                >
-                  {isListening ? 'Listening...' : 'Always here'}
-                </motion.p>
-              </div>
-            </div>
-          </div>
 
           {/* Voice/Text Toggle */}
           <div className="px-3 py-2.5 bg-gray-50 border-b border-gray-200">
@@ -400,17 +353,17 @@ const ProfileScreen = ({ delay = 0 }) => {
           {/* Profile Stats */}
           <div className="px-4 py-4 bg-gray-50">
             <div className="grid grid-cols-3 gap-2">
-              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm min-w-0 overflow-hidden">
                 <div className="text-xl font-bold text-soft-blue">127</div>
-                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Conversations</div>
+                <div className="text-[9px] text-gray-500 mt-1 leading-tight px-0.5 break-words">Conversations</div>
               </div>
-              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm min-w-0 overflow-hidden">
                 <div className="text-xl font-bold text-soft-green">42</div>
-                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Sessions</div>
+                <div className="text-[9px] text-gray-500 mt-1 leading-tight px-0.5 break-words">Sessions</div>
               </div>
-              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm">
+              <div className="text-center bg-white rounded-xl p-2.5 shadow-sm min-w-0 overflow-hidden">
                 <div className="text-xl font-bold text-soft-blue">15</div>
-                <div className="text-[10px] text-gray-500 mt-1 leading-tight">Days Active</div>
+                <div className="text-[9px] text-gray-500 mt-1 leading-tight px-0.5 break-words">Days Active</div>
               </div>
             </div>
           </div>
