@@ -46,6 +46,7 @@ const VoiceChatScreen = ({ delay = 0 }) => {
         className="w-64 mx-auto bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl transform-gpu"
         style={{ transformStyle: 'preserve-3d' }}
       >
+        <h3 className="font-semibold text-sm truncate">solmate4you.ai</h3>
         <div className="bg-white rounded-[2rem] overflow-hidden h-[500px] flex flex-col">
           {/* Status Bar */}
           <div className="bg-gradient-to-r from-soft-blue to-soft-green px-4 py-2 flex justify-between items-center text-white text-xs">
